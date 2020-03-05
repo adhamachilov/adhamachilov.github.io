@@ -1,324 +1,101 @@
-* {
-    border: 1px dotted gray;
-    box-sizing: border-box;
+/* Telegram:  @macrospam */
+
+body {
+	background-color: rgb(0,0,0,0.1);
+
 }
 
-.container {
-    width: 100%;
-    /*max-width: 800px;*/
-    margin: 0px auto;
+input {
+	width: 200px;
+	font-family: courier new;
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 17px;
+	margin: 5px 5px;
+	padding: 5px 5px;
+	background-color: rgb(232, 240, 254);
 }
 
-.row::after, .container::after {
-    content: "";
-    display: table;
-    clear: both;
+h1, h2, h3, h4, h5, h6 {
+	color: darkblue;
+	font-family: courier new;
+}
+
+hr {
+	width: 90%;
+	color: blue;
+}
+
+p {
+	text-align: justify;
+	padding: 0px 25px;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+
+}
+
+a:hover {
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 0px 5px;
+}
+
+img {
+	width: 70%;
+	border: 1px solid blue;
+	border-radius: 15px;
+	box-shadow: 15px 15px 20px rgb(0,0,0,0.3);
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .logo {
-    float: left;
+	font-family: courier new;
+	margin-bottom: 10px;
+	width: 78%;
 }
 
-.nav {
-    float: right;
-    margin: 0px 20px;
+.gde-gde {
+	font-size: 17px;
+	margin-top: 15px;
+	font-family: courier new;
+	margin-bottom: 50px;
 }
 
-.col-1-3 {
-    width: 33.333333%;
-    float: left;
+button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: lightblue;
+	border: 1px solid blue;
+	padding: 5px 8px;
+	border-radius: 5px;
+	font-family: courier new;
+	font-size: 16px;
 }
 
-.col-2-3 {
-    width: 66.666666%;
-    float: left;
+button:hover {
+	background-color: blue;
+	cursor: pointer;
 }
 
-.col-1-2 {
-    width: 50%;
-    float: left;
+.large {
+	background-color: white;
+	width: 70%;
+	color: darkblue;
+	margin-top: 10px;
+	font-family: courier new;
+	padding-bottom: 15px;
+	border: 1px solid blue;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
-.col-1-4 {
-    width: 25%;
-    float: left;
+.abc1 {
+	color: blue;
+	font-size: 17px;
 }
 
-.col-3-4 {
-    width: 75%;
-    float: left;
-}
-
-.nav a {
-    padding: 10px;
-    font-size: 22px;
-}
-
-@media (max-width: 360px) {
-    .col-1-3, 
-    .col-2-3,
-    .col-1-2,
-    .col-1-4,
-    .col-3-4 {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-/* Large devices (desktops, less than 1200px)*/
-@media (min-width: 991.98px) { 
-    .col-xl-1 {
-        width: 8.333333%;
-        float: left;
-    }
-    
-    .col-xl-2 {
-        width: 16.666666%;
-        float: left;
-    }
-    
-    .col-xl-3 {
-        width: 25%;
-        float: left;
-    }
-    
-    .col-xl-4 {
-        width: 33.333333%;
-        float: left;
-    }
-    
-    .col-xl-5 {
-        width: 41.6666666%;
-        float: left;
-    }
-
-    .col-xl-6 {
-        width: 50%;
-        float: left;
-    }
-
-    .col-xl-7 {
-        width: 58.333333%;
-        float: left;
-    }
-
-    .col-xl-8 {
-        width: 66.666666%;
-        float: left;
-    }
-
-    .col-xl-9 {
-        width: 75%;
-        float: left;
-    }
-
-    .col-xl-10 {
-        width: 83.3333333%;
-        float: left;
-    }
-
-    .col-xl-11 {
-        width: 91.6666666%;
-        float: left;
-    }
-
-    .col-xl-12 {
-        width: 100%;
-        float: left;
-    }
-}
-
-/* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { 
-    .col-lg-1 {
-        width: 8.333333%;
-        float: left;
-    }
-    
-    .col-lg-2 {
-        width: 16.666666%;
-        float: left;
-    }
-    
-    .col-lg-3 {
-        width: 25%;
-        float: left;
-    }
-    
-    .col-lg-4 {
-        width: 33.333333%;
-        float: left;
-    }
-    
-    .col-lg-5 {
-        width: 41.6666666%;
-        float: left;
-    }
-
-    .col-lg-6 {
-        width: 50%;
-        float: left;
-    }
-
-    .col-lg-7 {
-        width: 58.333333%;
-        float: left;
-    }
-
-    .col-lg-8 {
-        width: 66.666666%;
-        float: left;
-    }
-
-    .col-lg-9 {
-        width: 75%;
-        float: left;
-    }
-
-    .col-lg-10 {
-        width: 83.3333333%;
-        float: left;
-    }
-
-    .col-lg-11 {
-        width: 91.6666666%;
-        float: left;
-    }
-
-    .col-lg-12 {
-        width: 100%;
-        float: left;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
-    .col-md-1 {
-        width: 8.333333%;
-        float: left;
-    }
-    
-    .col-md-2 {
-        width: 16.666666%;
-        float: left;
-    }
-    
-    .col-md-3 {
-        width: 25%;
-        float: left;
-    }
-    
-    .col-md-4 {
-        width: 33.333333%;
-        float: left;
-    }
-    
-    .col-md-5 {
-        width: 41.6666666%;
-        float: left;
-    }
-
-    .col-md-6 {
-        width: 50%;
-        float: left;
-    }
-
-    .col-md-7 {
-        width: 58.333333%;
-        float: left;
-    }
-
-    .col-md-8 {
-        width: 66.666666%;
-        float: left;
-    }
-
-    .col-md-9 {
-        width: 75%;
-        float: left;
-    }
-
-    .col-md-10 {
-        width: 83.3333333%;
-        float: left;
-    }
-
-    .col-md-11 {
-        width: 91.6666666%;
-        float: left;
-    }
-
-    .col-md-12 {
-        width: 100%;
-        float: left;
-    }
-}
-
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    .col-sm-1 {
-        width: 8.333333%;
-        float: left;
-    }
-    
-    .col-sm-2 {
-        width: 16.666666%;
-        float: left;
-    }
-    
-    .col-sm-3 {
-        width: 25%;
-        float: left;
-    }
-    
-    .col-sm-4 {
-        width: 33.333333% !important;
-        float: left;
-    }
-    
-    .col-sm-5 {
-        width: 41.6666666%;
-        float: left;
-    }
-
-    .col-sm-6 {
-        width: 50%;
-        float: left;
-    }
-
-    .col-sm-7 {
-        width: 58.333333%;
-        float: left;
-    }
-
-    .col-sm-8 {
-        width: 66.666666%;
-        float: left;
-    }
-
-    .col-sm-9 {
-        width: 75%;
-        float: left;
-    }
-
-    .col-sm-10 {
-        width: 83.3333333%;
-        float: left;
-    }
-
-    .col-sm-11 {
-        width: 91.6666666%;
-        float: left;
-    }
-
-    .col-sm-12 {
-        width: 100%;
-        float: left;
-    }
-}
-
+/* Telegram:  @macrospam */

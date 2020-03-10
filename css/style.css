@@ -1,101 +1,221 @@
-/* Telegram:  @macrospam */
+* {
+    /*border: 1px dotted gray;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
 
 body {
-	background-color: rgb(0,0,0,0.1);
-
+    background-color: orange;
 }
 
-input {
-	width: 200px;
-	font-family: courier new;
-	border: 1px solid blue;
-	border-radius: 5px;
-	font-size: 17px;
-	margin: 5px 5px;
-	padding: 5px 5px;
-	background-color: rgb(232, 240, 254);
+.topnav {
+    position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: darkblue;
-	font-family: courier new;
+.dropdown {
+    display: inline-block;
+    float: left;
 }
 
-hr {
-	width: 90%;
-	color: blue;
+.dropdown-content {
+    position: absolute;
+    display: none;
+    top: 49px;
+    left: 0px;
+    width: 100%;
+    background-color: #333;
+    z-index: 10;
 }
 
-p {
-	text-align: justify;
-	padding: 0px 25px;
+
+
+.dropdown:hover .dropbtn {
+    background-color: #4CAF50;
 }
 
-a {
-	color: red;
-	text-decoration: none;
-
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-a:hover {
-	background-color: yellow;
-	border-radius: 5px;
-	padding: 0px 5px;
+.topnav a:hover {
+    background-color: #4CAF50;
 }
 
-img {
-	width: 70%;
-	border: 1px solid blue;
-	border-radius: 15px;
-	box-shadow: 15px 15px 20px rgb(0,0,0,0.3);
-	margin-top: 10px;
-	margin-bottom: 10px;
+.dropdown-content a {
+    display: block !important;
 }
 
-.logo {
-	font-family: courier new;
-	margin-bottom: 10px;
-	width: 78%;
+.topnav, .dropbtn {
+    background-color: #333;
+    
 }
 
-.gde-gde {
-	font-size: 17px;
-	margin-top: 15px;
-	font-family: courier new;
-	margin-bottom: 50px;
+.topnav::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-button {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: lightblue;
-	border: 1px solid blue;
-	padding: 5px 8px;
-	border-radius: 5px;
-	font-family: courier new;
-	font-size: 16px;
+.topnav a  {
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-button:hover {
-	background-color: blue;
-	cursor: pointer;
+.dropdown-content a {
+    padding: 5px 14px;
 }
 
-.large {
-	background-color: white;
-	width: 70%;
-	color: darkblue;
-	margin-top: 10px;
-	font-family: courier new;
-	padding-bottom: 15px;
-	border: 1px solid blue;
-	border-radius: 10px;
-	margin-bottom: 10px;
+.active {
+    background-color: #4CAF50;
+    color: #fff;
 }
 
-.abc1 {
-	color: blue;
-	font-size: 17px;
+.dropbtn {
+    float: left;
+    font-size: 17px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
 }
 
-/* Telegram:  @macrospam */
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1-6 {
+    float: left;
+    width: 16.6666666%;
+}
+
+.col-1-6 a {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.col-1-6 h3, .col-1-6 h4 {
+    color: #f2f2f2;
+}
+
+.col-1-6 h4 {
+    padding-left: 14px;
+    border-bottom: 1px dotted #f2f2f2;
+    width: 80%;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    display: none;
+}
+
+.slide .slide-name {
+    position: absolute;
+    font-size: 36px;
+    color: #f2f2f2;
+    bottom: 4px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.main {
+    height: 100%;
+}
+
+.slidernav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    padding: 0 20px;
+}
+
+.slidernav #prev {
+    float: left;
+}
+
+.slidernav #next {
+    float: right;
+}
+
+.slidernav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slidernav #prev, 
+.slidernav #next {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #fff;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #005cbf;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.discount {
+    position: absolute;
+    top: -12px;
+    left: -22px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
